@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-</head>
-<body bgcolor="pink">
-    <h1>Welcome to My Portfolio</h1>
-    <h2> I am a Web Developer</h2>
-    <h3>Here are some of my projects:</h3>
-    <hr/>
-    <h2><a href="./public/movie-ranking.html">Movie Ranking Project</a></h2>
-    <br/>
-    <img src="./assets/images/movie-ranking.png" alt="image of my movie rank project" height="200" width="300"/>
-    <br/>
-    <h4><a href="./public/birthday-invite.html">Birthday Invite Project
-    <br/>
-    <img src="./assets/images/birthday-invite.png" alt="image of my birthday invite project" height="200" width="300"/>
-    <hr/></a></h4>
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html" style="float: right;">Contact Me</a>
-</body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="hero container">
+      <p class="eyebrow">Hello, I’m</p>
+      <h1>Welcome to My Portfolio</h1>
+      <p class="subtitle">A web developer crafting clean and beautiful digital experiences.</p>
+      <nav class="top-links">
+        <a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <img
+              src="./assets/images/movie-ranking.png"
+              alt="Preview of my movie ranking project"
+              width="300"
+              height="200"
+            />
+            <div class="project-content">
+              <h3>Movie Ranking Project</h3>
+              <p>A simple ranking layout showcasing favorite films and clean typography.</p>
+              <a class="project-link" href="./public/movie-ranking.html">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="./assets/images/birthday-invite.png"
+              alt="Preview of my birthday invite project"
+              width="300"
+              height="200"
+            />
+            <div class="project-content">
+              <h3>Birthday Invite Project</h3>
+              <p>An inviting event page featuring playful design and clear details.</p>
+              <a class="project-link" href="./public/birthday-invite.html">View Project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
